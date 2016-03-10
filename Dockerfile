@@ -9,7 +9,7 @@ RUN apk add --update pwgen && rm -rf /var/cache/apk/*
 RUN cd / \
   && wget https://ddnet.tw/downloads/DDNet-9.2-linux_x86_64.tar.gz \
   && tar -zxvf DDNet-9.2-linux_x86_64.tar.gz \
-  && mv DDNet-9.2-linux_x86_64 DDNet
+  && mv DDNet-9.2-linux_x86_64 DDNet \
   && cd DDNet
   
 COPY run.bash /run.bash
