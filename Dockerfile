@@ -2,6 +2,7 @@ FROM alpine:latest
 MAINTENER o_tee_one <o_tee_one@r0x.tw>
 
 ENV GAME_TYPE ddrace
+ENV GAME_NAME r0x.tw - new server
 
 RUN cd / \
   wget https://ddnet.tw/downloads/DDNet-9.2-linux_x86_64.tar.gz \
