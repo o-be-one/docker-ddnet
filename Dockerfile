@@ -14,6 +14,5 @@ COPY blocker.cfg
 
 RUN chmod +x /run.bash
 
-
 EXPOSE 8303/udp
 CMD ["/run.bash"]
