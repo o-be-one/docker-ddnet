@@ -5,7 +5,7 @@ ENV GAME_NAME "r0x.tw - new server"
 ENV MAX_CLIENTS 64
 ENV GAME_MAP "blmapV3"
 
-RUN apk add --update pwgen && rm -rf /var/cache/apk/*
+RUN apk add --update pwgen && apk add --update openssl && rm -rf /var/cache/apk/*
 RUN cd / \
   && wget http://ddnet.tw/downloads/DDNet-9.2-linux_x86_64.tar.gz \
   && tar -zxvf DDNet-9.2-linux_x86_64.tar.gz \
