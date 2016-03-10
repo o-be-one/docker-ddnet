@@ -11,7 +11,8 @@ RUN cd / \
   && tar -zxvf DDNet-9.2-linux_x86_64.tar.gz \
   && mv DDNet-9.2-linux_x86_64 DDNet \
   && cd DDNet
-  
+
+COPY blmapV3.map /DDNet/data/maps/blmapV3.map
 COPY run.bash /run.bash
 COPY ddrace.cfg /ddrace.cfg
 COPY blocker.cfg /blocker.cfg
