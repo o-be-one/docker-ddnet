@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [[ ${PASSWORD} == "changeme" ]] {
+if [[ ${PASSWORD} == "changeme" ]]; then
   echo "sv_rcon_password $(pwgen -s 12 1)" >> /${GAME_TYPE}.cfg
 else
   echo "sv_rcon_password ${PASSWORD}" >> /${GAME_TYPE}.cfg
-}
+fi
 
 echo "sv_name \"${GAME_NAME}\"" >> /${GAME_TYPE}.cfg
 echo "sv_max_clients ${MAX_CLIENTS}" >> /${GAME_TYPE}.cfg
