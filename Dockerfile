@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM phusion/baseimage:latest
 MAINTAINER o_tee_one <o_tee_one@r0x.tw>
 
 ENV PASSWORD "changeme"
