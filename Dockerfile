@@ -11,7 +11,7 @@ RUN apk add --update pwgen openssl python g++ bam bash unzip \
   && rm -rf /var/cache/apk/*
 RUN cd / \
   && wget https://github.com/ddnet/ddnet/archive/master.zip \
-  && unzip master.zip \
+  && unzip master.zip
 RUN cd ddnet-master \
   && bam server_release \
   && cd /
