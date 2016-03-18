@@ -3,6 +3,7 @@ MAINTAINER o_tee_one <o_tee_one@r0x.tw>
 
 ENV PASSWORD "changeme"
 ENV GAME_NAME "r0x.tw - new server"
+ENV GAME_TYPE "blocker"
 ENV MAX_CLIENTS 64
 ENV GAME_MAP "blmapV3"
 
