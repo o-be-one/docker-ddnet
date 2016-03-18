@@ -11,4 +11,4 @@ echo "sv_max_clients ${MAX_CLIENTS}" >> /${GAME_TYPE}.cfg
 echo "sv_map \"${GAME_MAP}\"" >> /${GAME_TYPE}.cfg
 
 cat /${GAME_TYPE}.cfg
-exec /DDNet/DDNet-Server -f /${GAME_TYPE}.cfg
+exec /ddnet-master/DDNet-Server -f /${GAME_TYPE}.cfg
